@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop the Bloom Boutique edit: thoughtfully chosen clothing and accessories for your everyday, and then some."
+    />
+    <meta name="theme-color" content="#fbf7f3" />
+    <title>Bloom Boutique — A considered edit for everyday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Bloom Boutique home">
+          <span class="brand-mark" aria-hidden="true">b.</span>
+          <span>Bloom <span class="brand-light">Boutique</span></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#about">Our story</a>
+          <button class="bag-button" type="button" data-open-cart>
+            Bag <span class="bag-count" aria-label="0 items in bag">0</span>
+          </button>
+          <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> A little something lovely</p>
+          <h1>Style that feels<br />like <em>you.</em></h1>
+          <p class="hero-intro">
+            Thoughtfully chosen pieces for the days you want to feel a little
+            more like yourself.
+          </p>
+          <a class="button button-dark" href="#collection">
+            Explore the collection <span aria-hidden="true">↗</span>
+          </a>
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <span>Made for your everyday, and then some.</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85"
+            alt="Friends browsing a thoughtfully curated clothing collection"
+          />
+          <div class="hero-stamp" aria-label="Curated with care">
+            <span>CURATED</span>
+            <span class="stamp-flower" aria-hidden="true">✳</span>
+            <span>WITH CARE</span>
+          </div>
+          <span class="image-caption">Find your feel-good favorite.</span>
+        </div>
+      </section>
+
+      <div class="brand-notes" aria-label="The Bloom Boutique edit">
+        <div><span>01</span> A considered edit</div>
+        <span class="brand-notes-divider" aria-hidden="true"></span>
+        <div><span>02</span> Pieces with personality</div>
+        <span class="brand-notes-divider" aria-hidden="true"></span>
+        <div><span>03</span> A little help, always</div>
+      </div>
+
+      <section class="collection section-pad" id="collection">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> The good stuff</p>
+              <h2>Pieces to <em>fall for.</em></h2>
+            </div>
+            <p class="section-intro">
+              Easy-to-love staples and little statement-makers, picked just
+              for you.
+            </p>
+          </div>
+          <p class="demo-catalog-note">Sample catalog for demonstration; prices and product details are illustrative.</p>
+
+          <div class="shop-toolbar">
+            <div class="category-filters" role="group" aria-label="Filter products by category">
+              <button class="filter-chip is-active" type="button" data-category="all" aria-pressed="true">Everything <span>6</span></button>
+              <button class="filter-chip" type="button" data-category="clothing" aria-pressed="false">Clothing <span>4</span></button>
+              <button class="filter-chip" type="button" data-category="accessories" aria-pressed="false">Accessories <span>2</span></button>
+            </div>
+            <div class="shop-controls">
+              <label class="search-box">
+                <span class="visually-hidden">Search the collection</span>
+                <span aria-hidden="true">⌕</span>
+                <input id="product-search" type="search" placeholder="Find your favorite…" autocomplete="off" />
+              </label>
+              <label class="sort-control">
+                <span class="visually-hidden">Sort products</span>
+                <select id="product-sort">
+                  <option value="featured">Featured</option>
+                  <option value="price-low">Price: low to high</option>
+                  <option value="price-high">Price: high to low</option>
+                  <option value="name">Name: A to Z</option>
+                </select>
+              </label>
+              <button class="wishlist-filter" type="button" data-toggle-saved aria-pressed="false">
+                <span aria-hidden="true">♡</span> Saved <span class="saved-count">0</span>
+              </button>
+            </div>
+          </div>
+
+          <p class="results-count" aria-live="polite">Showing 6 lovely finds</p>
+          <div class="product-grid">
+            <article class="product-card" data-category="clothing" data-price="58" data-colors="Chambray,Soft white,Olive">
+              <button class="product-image" type="button" data-action="quick-view" aria-label="View Sunday Linen Shirt details">
+                <img
+                  src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=85"
+                  alt="Textured blue button-up shirt"
+                  loading="lazy"
+                />
+                <span class="product-tag">THE BLOOM EDIT</span>
+                <span class="product-arrow" aria-hidden="true">Quick view ↗</span>
+              </button>
+              <div class="product-details">
+                <h3>Sunday Linen Shirt</h3>
+                <p data-price-label>$58.00</p>
+              </div>
+              <p class="product-type">The easy layer</p>
+              <div class="card-actions">
+                <button class="card-add" type="button" data-action="quick-view">Choose options</button>
+                <button class="save-button" type="button" data-action="toggle-wishlist" aria-label="Save Sunday Linen Shirt" aria-pressed="false">♡</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="clothing" data-price="84" data-colors="Burgundy,Blush,Soft white">
+              <button class="product-image" type="button" data-action="quick-view" aria-label="View Daydream Midi Dress details">
+                <img
+                  src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=85"
+                  alt="Light, feminine midi dress"
+                  loading="lazy"
+                />
+                <span class="product-arrow" aria-hidden="true">Quick view ↗</span>
+              </button>
+              <div class="product-details">
+                <h3>Daydream Midi Dress</h3>
+                <p data-price-label>$84.00</p>
+              </div>
+              <p class="product-type">A little occasion magic</p>
+              <div class="card-actions">
+                <button class="card-add" type="button" data-action="quick-view">Choose options</button>
+                <button class="save-button" type="button" data-action="toggle-wishlist" aria-label="Save Daydream Midi Dress" aria-pressed="false">♡</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="clothing" data-price="72" data-colors="Cream,Blue,Blush">
+              <button class="product-image" type="button" data-action="quick-view" aria-label="View Everyday Knit details">
+                <img
+                  src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=85"
+                  alt="Cream graphic T-shirt"
+                  loading="lazy"
+                />
+                <span class="product-tag product-tag-new">THE COZY ONE</span>
+                <span class="product-arrow" aria-hidden="true">Quick view ↗</span>
+              </button>
+              <div class="product-details">
+                <h3>Everyday Graphic Tee</h3>
+                <p data-price-label>$72.00</p>
+              </div>
+              <p class="product-type">A playful everyday staple</p>
+              <div class="card-actions">
+                <button class="card-add" type="button" data-action="quick-view">Choose options</button>
+                <button class="save-button" type="button" data-action="toggle-wishlist" aria-label="Save Everyday Graphic Tee" aria-pressed="false">♡</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="clothing" data-price="96" data-colors="Camel,Chocolate,Black">
+              <button class="product-image" type="button" data-action="quick-view" aria-label="View Sunday Best Blazer details">
+                <img
+                  src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=85"
+                  alt="Relaxed brown bomber jacket"
+                  loading="lazy"
+                />
+                <span class="product-arrow" aria-hidden="true">Quick view ↗</span>
+              </button>
+              <div class="product-details">
+                <h3>Sunday Best Jacket</h3>
+                <p data-price-label>$96.00</p>
+              </div>
+              <p class="product-type">An easy layer with a little structure</p>
+              <div class="card-actions">
+                <button class="card-add" type="button" data-action="quick-view">Choose options</button>
+                <button class="save-button" type="button" data-action="toggle-wishlist" aria-label="Save Sunday Best Jacket" aria-pressed="false">♡</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="accessories" data-price="64" data-colors="Coral,Chocolate,Black">
+              <button class="product-image" type="button" data-action="quick-view" aria-label="View Golden Hour Tote details">
+                <img
+                  src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=85"
+                  alt="Structured coral everyday handbag"
+                  loading="lazy"
+                />
+                <span class="product-arrow" aria-hidden="true">Quick view ↗</span>
+              </button>
+              <div class="product-details">
+                <h3>Golden Hour Tote</h3>
+                <p data-price-label>$64.00</p>
+              </div>
+              <p class="product-type">Room for the little things</p>
+              <div class="card-actions">
+                <button class="card-add" type="button" data-action="quick-view">Choose options</button>
+                <button class="save-button" type="button" data-action="toggle-wishlist" aria-label="Save Golden Hour Tote" aria-pressed="false">♡</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="accessories" data-price="32" data-colors="Gold,Silver,Green stone">
+              <button class="product-image" type="button" data-action="quick-view" aria-label="View Little Things Hoops details">
+                <img
+                  src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=85"
+                  alt="Colorful statement earrings"
+                  loading="lazy"
+                />
+                <span class="product-tag">A LITTLE GIFT</span>
+                <span class="product-arrow" aria-hidden="true">Quick view ↗</span>
+              </button>
+              <div class="product-details">
+                <h3>Little Things Earrings</h3>
+                <p data-price-label>$32.00</p>
+              </div>
+              <p class="product-type">The finishing touch</p>
+              <div class="card-actions">
+                <button class="card-add" type="button" data-action="quick-view">Choose options</button>
+                <button class="save-button" type="button" data-action="toggle-wishlist" aria-label="Save Little Things Earrings" aria-pressed="false">♡</button>
+              </div>
+            </article>
+          </div>
+          <div class="empty-products" hidden>
+            <span aria-hidden="true">✳</span>
+            <h3>No finds just yet</h3>
+            <p>Try another search or browse the full edit.</p>
+            <button class="text-link" type="button" data-reset-products>Show everything</button>
+          </div>
+          <p class="collection-note">
+            See something you love? <a href="#contact">We'd love to help you find it.</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="about">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85"
+            alt="A relaxed boutique fashion look in warm afternoon light"
+            loading="lazy"
+          />
+          <span class="about-image-note">A little joy, every day.</span>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span></span> A note from us</p>
+          <h2>Good clothes.<br />Good <em>feeling.</em></h2>
+          <p>
+            Bloom Boutique started with a simple idea: getting dressed should
+            feel good. We bring together considered pieces that are easy to
+            wear, lovely to keep, and a little bit special.
+          </p>
+          <p>
+            Think of us as your friendly neighborhood edit. No rules, no
+            pressure—just things we truly love, ready to find their way into
+            your everyday.
+          </p>
+          <a class="text-link" href="#contact">Come say hello <span aria-hidden="true">↗</span></a>
+          <span class="signature">With love, Bloom</span>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact">
+        <div class="contact-inner container">
+          <p class="eyebrow"><span></span> We’re right here</p>
+          <h2>A question, a find,<br />or just <em>hello?</em></h2>
+          <p class="contact-copy">
+            Need a size check or a second opinion? Drop us a message—we're
+            always happy to help.
+          </p>
+          <a
+            class="button button-light"
+            href="https://wa.me/15551234567?text=Hi%20Bloom%20Boutique!%20I%27d%20love%20to%20know%20more."
+            data-whatsapp-phone="15551234567"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chat with us on WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+          <p class="phone-note">
+            Demo link: replace <strong>+1 555 123 4567</strong> in the link
+            with your WhatsApp number (country code, digits only).
+          </p>
+        </div>
+        <div class="contact-flower" aria-hidden="true">✳</div>
+      </section>
+    </main>
+
+    <dialog class="product-dialog" aria-labelledby="dialog-product-name">
+      <button class="dialog-close" type="button" aria-label="Close product details" data-close-dialog>×</button>
+      <div class="quick-view-layout">
+        <div class="quick-view-image"><img id="dialog-product-image" src="" alt="" /></div>
+        <div class="quick-view-copy">
+          <p class="eyebrow"><span></span> A Bloom favorite</p>
+          <h2 id="dialog-product-name"></h2>
+          <p class="quick-view-price" id="dialog-product-price"></p>
+          <p class="quick-view-description" id="dialog-product-description"></p>
+          <label class="variant-field" id="size-field">
+            <span>Size</span>
+            <select id="product-size"></select>
+          </label>
+          <label class="variant-field">
+            <span>Color</span>
+            <select id="product-color"></select>
+          </label>
+          <div class="quick-view-actions">
+            <button class="button button-dark" type="button" data-add-to-bag>Add to bag <span aria-hidden="true">↗</span></button>
+            <a class="text-link" id="product-enquiry" href="https://wa.me/15551234567?text=Hi%20Bloom%20Boutique!%20I%27d%20love%20to%20know%20more." target="_blank" rel="noopener noreferrer">Ask us on WhatsApp ↗</a>
+          </div>
+          <p class="demo-note">Demo shopping bag only. No payment or order is processed.</p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="cart-dialog" aria-labelledby="cart-title">
+      <div class="cart-head">
+        <div>
+          <p class="eyebrow"><span></span> Your little edit</p>
+          <h2 id="cart-title">Your bag <span class="cart-title-count"></span></h2>
+        </div>
+        <button class="dialog-close" type="button" aria-label="Close shopping bag" data-close-dialog>×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty">
+        <span aria-hidden="true">♡</span>
+        <h3>Your bag is taking a breather.</h3>
+        <p>Find something lovely to bring it back to life.</p>
+        <button class="text-link" type="button" data-close-dialog>Browse the collection</button>
+      </div>
+      <div class="cart-footer" id="cart-footer">
+        <div><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+        <p>Demo only—no payment or order is processed.</p>
+        <button class="button button-dark" type="button" data-close-dialog>Keep browsing <span aria-hidden="true">↗</span></button>
+      </div>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <footer class="footer">
+      <div class="footer-inner container">
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">b.</span>
+          <span>Bloom <span class="brand-light">Boutique</span></span>
+        </a>
+        <p>Thoughtfully picked. Happily worn.</p>
+        <a class="back-top" href="#home">Back to top ↑</a>
+        <span class="copyright">© <span id="year">2026</span> Bloom Boutique</span>
+      </div>
+    </footer>
+  </body>
+</html>
